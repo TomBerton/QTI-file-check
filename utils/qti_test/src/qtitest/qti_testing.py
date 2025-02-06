@@ -1,7 +1,12 @@
+import os
 import re
 
-# Define the function to identify incorrectly formatted questions
 def find_incorrectly_formatted_questions(file_path):
+    """Identify incorrectly formatted questions in a text file."""
+    # Extract and print only the file name
+    file_name = os.path.basename(file_path)
+    print(f"\nTesting file: {file_name}")
+
     with open(file_path, 'r') as file:
         content = file.read()
 
@@ -29,6 +34,7 @@ def find_incorrectly_formatted_questions(file_path):
                 ):
                     incorrect_format.append(question.strip())
 
+    # Display results
     if incorrect_format:
         print("Questions with incorrect format:")
         for question in incorrect_format:
