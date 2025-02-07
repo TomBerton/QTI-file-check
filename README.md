@@ -27,3 +27,7 @@ To test your QTI text files by providing the path to the file after running the 
 ```shell
 qtitest test
 ```
+
+## QTI File Checker script
+
+You can download and run the [qti_file_checker.py](/Python_qti_file_checker/qti_file_checker.py) instead of using the app above.
